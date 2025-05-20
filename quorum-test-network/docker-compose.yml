@@ -9,8 +9,6 @@ x-quorum-def:
   restart: "on-failure"
   build:
     context: config/goquorum
-    args:
-      QUORUM_VERSION: ${QUORUM_VERSION:-latest}
   expose:
     - 30303
     - 8545
